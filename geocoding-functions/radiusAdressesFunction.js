@@ -42,7 +42,7 @@ async function radiusAdressesFunction(fileContent){
                 data = await new Promise((resolve, reject) => {
                     $.ajax({
                         type: "GET",
-                        url: `http://www.cartociudad.es/geocoder/api/geocoder/findJsonp?q=${address["Street address"]},${address["City"]}`,
+                        url: `https://www.cartociudad.es/geocoder/api/geocoder/findJsonp?q=${address["Street address"]},${address["City"]}`,
                         dataType: 'jsonp',
                         success: function (data) {
                             resolve(data);
