@@ -53,6 +53,9 @@ async function radiusAdressesFunction(fileContent){
                     });
                 });
 
+                console.log(address["Street address"])
+                console.log(address["City"])
+
                 addressLng = data.lng;
                 addressLat = data.lat;
 
